@@ -416,16 +416,21 @@
                         </div>
 
                         <!-- Simple Form -->
-                        <form class="space-y-4">
+                        <form action="https://formsubmit.co/sureshkargal1525@gmail.com" method="POST" class="space-y-4">
+                            <!-- Form Configuration -->
+                            <input type="hidden" name="_subject" value="New Inquiry from Website">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+
                             <div class="grid grid-cols-2 gap-4">
-                                <input type="text" placeholder="Name"
+                                <input type="text" name="name" placeholder="Name" required
                                     class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-primary transition-colors">
-                                <input type="email" placeholder="Email"
+                                <input type="email" name="email" placeholder="Email" required
                                     class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-primary transition-colors">
                             </div>
-                            <input type="text" placeholder="Subject"
+                            <input type="text" name="subject" placeholder="Subject" required
                                 class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-primary transition-colors">
-                            <textarea placeholder="How can we help?" rows="4"
+                            <textarea name="message" placeholder="How can we help?" rows="4" required
                                 class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent-primary transition-colors"></textarea>
                             <button type="submit"
                                 class="w-full bg-accent-primary hover:bg-blue-600 text-white font-bold py-4 rounded-lg transition-all hover:shadow-[0_0_20px_rgba(91,140,255,0.3)]">
